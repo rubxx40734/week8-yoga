@@ -1,0 +1,17 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables"; //修改變數內容
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+
+@import "./helpers/base";
+@import "./helpers/util";
+@import "./components/components";
+
+
+
+@import "./layout/layout";
+
+
+
+@import "./pages/index";
+@import "./pages/reserve"

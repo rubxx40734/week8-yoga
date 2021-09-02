@@ -1,0 +1,15 @@
+.header img{
+    width: 120px;
+    height: 31px;
+}
+.header .layoutMenu,.footerMenu{
+    a{
+        &:hover{
+            border-bottom: 2px solid black;
+        }
+    }
+}
+.footer img{
+    width: 120px;
+    height: 31px;
+}

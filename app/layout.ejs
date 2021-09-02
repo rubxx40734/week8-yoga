@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+
+  </head>
+
+  <body>
+    <div class="header bg-primary py-4">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand text-secondary fs-2" href="./index.html">DOYOGA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item settingHover">
+                  <a class="nav-link rounded-5" aria-current="page" href="course.html">課程介紹</a>
+                </li>
+                <li class="nav-item settingHover">
+                  <a class="nav-link rounded-5" href="space.html">瑜珈空間</a>
+                </li>
+                <li class="nav-item settingHover">
+                  <a class="nav-link rounded-5" href="classtable.html" tabindex="-1" aria-disabled="true">當月課表</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <a href="reserve.html" class="btn btn-outline-maintxt me-3">立即預約</a></li>
+                <a href="connection.html"  class="btn btn-outline-maintxt">聯絡我們</a></li>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+    </div>
+    
+    <%- contents %>
+
+    <footer class="footer bg-maintxt">
+     <div class="container py-5 border-bottom">
+       <div class="row align-items-center">
+         <div class="col-md-6 col-lg-4">
+           <p class="fs-5 text-white mb-2 mb-lg-0">現在訂閱，獲得課程優惠碼！</p>
+         </div>
+         <div class="col-md-4"></div>
+         <div class="col-md-5 col-lg-4">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="輸入您的電子信箱">
+            <a href="#" class="text-white bg-secondary input-group-text">訂閱</a>
+          </div>
+         </div>
+       </div>
+     </div>
+    <div class="container d-flex justify-content-between py-5">
+      <div class="footerMenu text-star">
+        <ul>
+          <li><a href="#" class="text-info fs-4 fw-bold text-white mb-2">DOYOGA</a></li>
+          <li><a href="#" class="text-info text-white mb-2">課程介紹</a></li>
+          <li><a href="#" class="text-info text-white mb-2">瑜珈空間</a></li>
+          <li><a href="#" class="text-info text-white mb-2">當月課表</a></li>
+          <li><p class="text-white d-block d-md-none mb-2">© 2021. All Rights Reserved.</p></li>
+        </ul>
+      </div>
+      <div class="coring align-self-end d-none d-md-block">
+        <p class="text-white">© 2021. All Rights Reserved.</p>
+      </div>
+      <div class="facebook">
+        <a href="#" class="text-white ms-2"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="#" class="text-white ms-2"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="#" class="text-white ms-2"><i class="fab fa-line fa-2x"></i></a>
+        <!-- <i class="fab fa-facebook-square fa-2x"></i>
+        <i class="fab fa-instagram fa-2x"></i>
+        <i class="fab fa-line fa-2x"></i> -->
+      </div>
+    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+        {
+          // Global settings:
+          disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+          startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+          initClassName: 'aos-init', // class applied after initialization
+          animatedClassName: 'aos-animate', // class applied on animation
+          useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+          disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+          debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+          throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+          // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+          offset: 120, // offset (in px) from the original trigger point
+          delay: 0, // values from 0 to 3000, with step 50ms
+          duration: 1000, // values from 0 to 3000, with step 50ms
+          easing: 'ease', // default easing for AOS animations
+          once: false, // whether animation should happen only once - while scrolling down
+          mirror: false, // whether elements should animate out while scrolling past them
+          anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        }
+      );
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      // var swiper = new Swiper(".mySwiper", {
+      //   slidesPerView: 1.3,
+      //   spaceBetween: 30,
+      //   pagination: {
+      //     el: ".swiper-pagination",
+      //     clickable: true,
+      //   },
+      //   grabCursor: true,
+
+      // });
+      var swiper = new Swiper(".mySwiperPC", {
+        slidesPerView: 3.3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        grabCursor: true,
+
+      });
+      var swiper = new Swiper(".mySwiperMobile", {
+        slidesPerView: 1.3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        grabCursor: true,
+
+      });
+    </script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+
+  </body>
+
+</html>
